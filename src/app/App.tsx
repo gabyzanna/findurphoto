@@ -650,11 +650,7 @@ export default function App() {
     link.click();
   };
 
-  /*
-   * ============================================================
-   * CLEANUP
-   * ============================================================
-   */
+  
 
   useEffect(() => {
     return () => {
@@ -668,11 +664,7 @@ export default function App() {
     };
   }, []);
 
-  /*
-   * ============================================================
-   * UI
-   * ============================================================
-   */
+
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col overflow-hidden">
@@ -832,12 +824,6 @@ export default function App() {
   );
 }
 
-/*
- * ================================================================
- * IDLE SCREEN
- * ================================================================
- */
-
 function IdleScreen({
   onStart,
   loading,
@@ -990,12 +976,6 @@ function IdleScreen({
   );
 }
 
-/*
- * ================================================================
- * BOOTH SCREEN
- * ================================================================
- */
-
 interface BoothScreenProps {
   videoRef: React.RefObject<HTMLVideoElement>;
 
@@ -1060,17 +1040,10 @@ function BoothScreen({
   return (
     <div className="flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_210px] overflow-hidden">
 
-      {/* ======================================================
-          LEFT
-          ====================================================== */}
-
+      
       <div className="flex flex-col items-center overflow-hidden min-h-0">
 
-        {/* ====================================================
-            CAMERA
-            1400 x 580
-            ==================================================== */}
-
+        
         <div className="relative w-full max-w-[1400px] h-[580px] shrink-0 bg-black overflow-hidden">
 
           <video

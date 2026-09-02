@@ -16,7 +16,7 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
-  base: '/findyourphoto/',
+  base: '/findurphoto/',
 
   plugins: [
     figmaAssetResolver(),
